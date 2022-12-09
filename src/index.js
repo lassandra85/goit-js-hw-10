@@ -1,4 +1,4 @@
-import './css/styles.css';
+
 import { fetchCountries } from './fetchCountries';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import debounce from 'lodash.debounce';
@@ -50,7 +50,7 @@ function renderTemplate(elements) {
 
   drawTemplate(refsTemplate, template);
 }
-
+console.log("hello");
 function createTemplateItem(element) {
   return element.map(
     ({ name, capital, population, flags, languages }) =>
